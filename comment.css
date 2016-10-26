@@ -1,0 +1,138 @@
+#fb_comments_container {
+  /*width: 100%;*/
+
+  overflow: hidden;
+  /*margin: 20px 0 auto auto;*/
+
+}
+#fb_comments_container #fb_comments {
+  list-style-type: none;
+  padding: 0;
+}
+#fb_comments_container #fb_comments h1 {
+  font-size: 1.3em;
+}
+#fb_comments_container #fb_comments h2 {
+  font-size: 1.2em;
+}
+#fb_comments_container #fb_comments h3 {
+  font-size: 1.1em;
+}
+#fb_comments_container #fb_comments h4,
+#fb_comments_container #fb_comments h5,
+#fb_comments_container #fb_comments h6 {
+  font-size: 1.05em;
+}
+#fb_comments_container #fb_comments .comment {
+  position: relative;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+  *border-bottom: 1px solid #f0f0f0;
+}
+#fb_comments_container #fb_comments .comment .avatar {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 50px;
+  float: left;
+}
+#fb_comments_container #fb_comments .comment .avatar img {
+  width: 48px;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+}
+#fb_comments_container #fb_comments .comment .comment_body,
+#fb_comments_container #fb_comments .comment .c_content {
+  margin-left: 70px;
+  display: block;
+}
+#fb_comments_container #fb_comments .comment .comment_body p,
+#fb_comments_container #fb_comments .comment .c_content p {
+  margin: 5px 0 15px 0;
+  padding: 0;
+  line-height: 1.8;
+}
+#fb_comments_container #fb_comments .comment .comment_body .author,
+#fb_comments_container #fb_comments .comment .c_content .author {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+#fb_comments_container #fb_comments .comment .comment_body .author b,
+#fb_comments_container #fb_comments .comment .c_content .author b {
+  color: #555;
+}
+#fb_comments_container #fb_comments .comment .comment_body .author small,
+#fb_comments_container #fb_comments .comment .c_content .author small {
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 0.7em;
+  color: #666;
+}
+#fb_new_comment {
+  padding-bottom: 50px;
+}
+#fb_new_comment textarea {
+  border-radius: 5px;
+  height: 80px;
+  width: 98%;
+  /*margin: 20px auto 0 auto;*/
+
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  *border: 1px solid #a8a8a8;
+  line-height: 1.5;
+}
+#fb_new_comment .comment_error {
+  color: red;
+  text-align: center;
+  display: block;
+  font-size: 0.8em;
+  padding-top: 1em;
+}
+#fb_new_comment .c_button:hover {
+  background: #E60900;
+  color: #fff;
+  text-decoration: none;
+}
+#fb_new_comment .c_button,
+#fb_new_comment #c_submit {
+  cursor: pointer;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 5px 5px 2px 5px;
+}
+#fb_new_comment .input_body {
+  margin-top: 10px;
+}
+#fb_new_comment .input_body ul {
+  list-style: none;
+  padding: 5px 0;
+  margin: auto 0;
+}
+#fb_new_comment .input_body ul li {
+  float: left;
+  margin-right: 2.2%;
+  /*for IE7*/
+
+  *margin-right: 22px;
+}
+#fb_new_comment .input_body ul li label {
+  line-height: 1em;
+}
+#fb_new_comment .input_body ul li input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+}
+#SwfStore_farbox_0 {
+  height: 0;
+  overflow: hidden;
+}
