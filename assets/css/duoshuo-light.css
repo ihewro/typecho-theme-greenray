@@ -86,15 +86,13 @@
 }
 
 #ds-waiting {
-	cursor: wait;
-	display: block;
-	width: 16px;
-	height: 11px;
-	padding: 0 0 3px 5px;
-	margin: 0;
-	background: url("data:image/gif;base64,R0lGODlhEAALAPQAAP///z2LqeLt8dvp7u7090GNqz2LqV+fuJ/F1IW2ycrf51aatHWswaXJ14i4ys3h6FmctUCMqniuw+vz9eHs8fb5+meku+Tu8vT4+cfd5bbT3tbm7PH2+AAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA") 0 0 no-repeat;
-	*background-image: url("//static.duoshuo.com/images/waiting.gif")
-}
+    cursor: wait;
+    display: block;
+    width: auto;
+    height: 30px;
+    margin: 0 auto;
+    background: url(../img/loading.gif) no-repeat center;
+	}
 
 #ds-reset .ds-highlight {
 	color: #017cb9 !important
@@ -594,7 +592,8 @@
 	text-align: right;
 	line-height: 18px;
 	padding-bottom: 3px;
-	width: 75px
+	width: 75px;
+	display:none;
 }
 
 #ds-thread #ds-reset .ds-account-control span {
@@ -887,7 +886,8 @@
     border-bottom: 1px dashed #f1f1f1;
     color: rgba(0,0,0,.5);
     border-radius: 5px;
-margin-top: 29px;
+	margin-top: 29px;
+	padding: 3px 0;
 }
 
 #ds-thread #ds-reset .ds-post-button:hover {
@@ -956,8 +956,8 @@ margin-top: 29px;
 }
 
 #ds-thread #ds-reset li.ds-tab a.ds-current {
-	border: 1px solid #ccc;
-	background-color: rgba(0,0,0,0.04)
+	border: none;
+	background:none;
 }
 
 #ds-thread #ds-reset li.ds-tab a:hover {
@@ -1300,7 +1300,7 @@ margin-top: 29px;
 #ds-thread #ds-reset .ds-paginator a:hover,#ds-thread #ds-reset .ds-paginator a.ds-current {
 	-webkit-border-radius: 0;
 	border-radius: 0;
-	background-color: rgba(0,0,0,0.03)
+	background:none;
 }
 
 #ds-thread #ds-reset .ds-paginator a.ds-current {
@@ -1721,10 +1721,10 @@ margin-top: 29px;
 
 #ds-wrapper #ds-reset .ds-logo {
 	display: inline-block;
-	width: 64px;
+	width: 72px;
 	height: 21px;
 	margin-right: 10px;
-	background: url("//static.duoshuo.com/images/logo.png") 0 0 no-repeat
+	background: url("../img/logo.png") 0 0 no-repeat
 }
 
 #ds-wrapper #ds-reset .ds-dialog-footer {
@@ -1736,7 +1736,8 @@ margin-top: 29px;
 #ds-wrapper #ds-reset .ds-dialog-footer span {
 	color: #999;
 	position: relative;
-	top: -6px
+	top: -6px;
+	display: none;
 }
 
 #ds-wrapper #ds-reset .ds-connect {
@@ -2365,7 +2366,7 @@ margin-top: 29px;
 
 
 #ds-thread #ds-reset .ds-comments,#ds-thread #ds-reset .ds-paginator {
-	border-bottom: 1px solid rgba(150, 150, 150, 0.2)
+	/*border-bottom: 1px solid rgba(150, 150, 150, 0.2)*/
 }
 
 #ds-thread #ds-reset a.ds-unread-comments-count {
@@ -2449,7 +2450,8 @@ margin-top: 29px;
 
 #ds-thread #ds-reset .ds-replybox {
 	padding: 0 0 0 0px;
-	margin: 0
+	margin: 0;
+    margin-top: 10px;
 }
 
 #ds-reset .ds-avatar img {
@@ -2723,3 +2725,50 @@ div#ds-bubble {
 }
 
 /*表情框处理结束*/
+ .ds-post-repost, .ds-post-report {
+    display: none!important;
+}
+
+#ds-thread #ds-reset ul.ds-comments-tabs .ds-service-icon {
+    display:none;
+
+}
+/*/*未读消息气泡开始*/
+#ds-notify{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    border: 0px;
+    opacity: 0.7;
+    min-height: 0px;
+    background: transparent url("http://7xlk7n.com1.z0.glb.clouddn.com/message2.jpg") no-repeat scroll center center / 136px;
+    background-color: #FAFCF9;
+    transition: all .2s ease-in;
+}
+
+
+#ds-notify:hover{
+    opacity:1;
+    min-height: 120px;
+}
+
+#ds-notify #ds-reset .ds-logo {
+    margin-top: 5px;
+}
+
+#ds-notify #ds-reset ul.ds-notify-unread li a {
+    color:#fff;
+    text-decoration:none;
+}/*未读消息气泡中的字体设置*/
+/*未读消息气泡结束*/
+
+#ds-wrapper #ds-reset .ds-unread-list li a {
+    color:#017cb9;
+}
+#ds-wrapper #ds-reset .ds-unread-list li,#ds-wrapper #ds-reset h2,#ds-wrapper #ds-reset .ds-control-group label {
+    color:#555;
+}
+#ds-wrapper #ds-reset .ds-dialog-inner {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),1px 3px 7px 0 rgba(0,0,0,.12),0 0 20px 5px rgba(0,0,0,.12);
+    border: 0;
+    background: #fff;
+    border-radius: 5px
+}

@@ -16,12 +16,30 @@
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('duoshuo-light.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/duoshuo-light.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/default.css') ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/railscasts.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/zoom.css') ?>">
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+    <?php if ($this->options->duoshuosn){ ?>
+    <style>
+	#ds-thread #ds-reset a.ds-user-name[data-user-id="<?php $this->options->duoshuoid();?>"]::after {
+    content: "博主";
+    color: #80d260;
+    margin-left: 6px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 300;
+    border-radius: 3px;
+    background: none;
+    padding: 2px 3px;
+}
+	</style>
+    <?php };?>
 </head>
  <body class="reader theme-white color-custom">
-
-    
+<div id="pjaxzz"> <img src="<?php $this->options->themeUrl('assets/img/loadingpjax.gif') ?>"> </div>
     

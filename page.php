@@ -4,6 +4,7 @@
 <div id="container" class="container">
   <!--sidebar-->
   <?php $this->need('sidebar.php'); ?>
+     <div id="pjax-container">
   <div id="primary" class="content-area">
     <article class="article page">
       <header class="header">
@@ -19,6 +20,11 @@
         <div class="nav-next"></div>
       </div>
     </nav>
-    <?php $this->need('footer.php'); ?>
+    <!--comments-->
+<div id="fb_comments_container">
+ <?php $this->need('comments.php'); ?>
+</div>
       </div>
+      </div>
+          <?php $this->need('footer.php'); ?>
 </div>

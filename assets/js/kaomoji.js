@@ -1,3 +1,4 @@
+var kaomoji = function() {
 $(function() {
  (function($) {
  $.fn.extend({
@@ -52,3 +53,6 @@ $(document).ready(function () {
 		$(this).prev("div").toggleClass("open");
 	});
 });
+};
+
+kaomoji();

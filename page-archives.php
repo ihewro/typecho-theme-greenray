@@ -11,11 +11,17 @@ $this->need('header.php');
   <div id="container" class="container">
   <!--sidebar-->
   <?php $this->need('sidebar.php'); ?>
+     <div id="pjax-container">
    <div id="primary" class="content-area">
    <article class="article archive">
      <header class="header">
       <h1 class="title">Archive</h1>
      </header>
+<div id="search-own">
+<form method="post" action="">
+    <input type="text" name="s" class="text search-class" size="32" placeholder="<?php _e('Input keyword And then Press enter'); ?>"/>
+</form>
+</div>
 <div class="content">
 <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=10000')->to($archives);
     $year=0; $mon=0; $i=0; $j=0;$mon2;
@@ -44,8 +50,8 @@ $this->need('header.php');
 </div>
 </article>
      <!--footer-->
-    <?php $this->need('footer.php'); ?>
+
+              </div>
               </div>
 </div>
-</body>
-</html>
+                  <?php $this->need('footer.php'); ?>

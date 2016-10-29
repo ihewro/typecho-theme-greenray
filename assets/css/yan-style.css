@@ -308,3 +308,10 @@
 		transform: translate(0,0) rotate(0)
 	}
 }
+
+@media only screen and (max-width:450px) {
+	.biaoqing_box {
+		width: 250px!important;
+		top: -265px!important
+	}
+}

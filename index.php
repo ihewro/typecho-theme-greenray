@@ -4,7 +4,7 @@
  * 
  * @package Greenray
  * @author imzoke & ihewro
- * @version 1.0.0
+ * @version 1.1.0
  * @link http://www.ihewro.com/
  */
 
@@ -15,6 +15,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
   <div id="container" class="container">
   <!--sidebar-->
    <?php $this->need('sidebar.php'); ?>
+   <div id="pjax-container">
    <div id="primary" class="content-area">
 <?php while($this->next()): ?>
     <article class="article">
@@ -41,7 +42,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
     </div>
    </div>
   </nav>
-    <!--footer-->
-    <?php $this->need('footer.php'); ?>
-   </div>
+     </div>
+     </div>
   </div>
+     <!--footer-->
+    <?php $this->need('footer.php'); ?>

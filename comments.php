@@ -1,7 +1,5 @@
 <?php if ($this->options->duoshuosn){ ?>
 <div id="comments"> 
-<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-<script src="<?php $this->options->themeUrl('assets/js/kaomoji.js') ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/yan-style.css'); ?>">
 <?php if($this->allow('comment')): ?>
 <!-- 多说评论框 start -->
