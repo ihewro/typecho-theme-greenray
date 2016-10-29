@@ -54,7 +54,7 @@ $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="
     container: '#pjax-container',
     fragment: '#pjax-container',
     timeout: 8000
-}).on('pjax:send',
+}).on('submit', 'form', function (event) {$.pjax.submit(event, '#pjax-container', {fragment:'#pjax-container', timeout:6000});}).on('pjax:send',
 function() {
 		gotoTop();
 	$('#pjaxzz').show();

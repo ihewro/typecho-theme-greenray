@@ -393,7 +393,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, STXihei, "华文细黑",'Microsoft Yahei',"微软雅黑", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   color: #555555;
@@ -646,7 +646,7 @@ blockquote {
   margin: 0 1.5em 1.5em;
   color: #999999;
   border-left: 5px solid #aae195;
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, "Songti SC", "SimSun", serif;
+  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, STXihei, "华文细黑","Microsoft Jhenghei","微软正黑",sans-serif;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -824,7 +824,7 @@ pre code {
 .article .content h3,
 .article .content h4,
 .article .content h5 {
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, "Songti SC", "SimSun", serif;
+  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, STXihei, "华文细黑","Microsoft Jhenghei","微软正黑",sans-serif;
 }
 .article .content img {
   max-width: 100%;
@@ -1248,4 +1248,9 @@ a.itags {
 }
 .page-navigator .current a {
     border: none;
+}
+
+.sidebar .header p{
+  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, STXihei, "华文细黑","Microsoft Jhenghei","微软正黑",sans-serif;
+
 }

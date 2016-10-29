@@ -29,7 +29,6 @@
      <div class="content">
       <?php $this->content('Keep reading...'); ?>
      </div>
-     <div class="footer"></div>
     </article>
     	<?php endwhile; ?>
         <?php else: ?>
