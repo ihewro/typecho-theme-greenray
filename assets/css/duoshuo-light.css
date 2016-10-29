@@ -2772,3 +2772,6 @@ div#ds-bubble {
     background: #fff;
     border-radius: 5px
 }
+.ds-recent-visitors .ds-avatar img {
+    display: inline!important;
+}
