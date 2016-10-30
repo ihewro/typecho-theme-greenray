@@ -1293,3 +1293,13 @@ form.protected input[type="submit"].submit:hover {
     color: #fff;
     outline: none;
 }
+.notebook a{
+	color: #999;
+}
+.superscript {
+    font-size: .45em!important;
+    position: absolute;
+    padding-left: .4375rem;
+    padding-top: .1875rem;
+    color: inherit!important;
+}

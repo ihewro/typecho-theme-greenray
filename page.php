@@ -8,7 +8,12 @@
   <div id="primary" class="content-area">
     <article class="article page">
       <header class="header">
-        <h1 class="title"><?php $this->title() ?></h1></header>
+        <h1 class="title"><?php $this->title() ?>
+            <?php if($this->user->hasLogin()):?>
+                <a class="superscript" href="<?php Helper::options()->adminUrl()?>write-page.php?cid=<?=$this->cid?>" target="_blank"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+            <?php endif?>
+            </h1>
+        </header>
       <div class="content">
       <?php $this->content(); ?>
       </div>

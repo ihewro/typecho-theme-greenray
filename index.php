@@ -4,7 +4,7 @@
  * 
  * @package Greenray
  * @author imzoke & ihewro
- * @version 1.1.3
+ * @version 1.1.4
  * @link http://www.ihewro.com/
  */
 

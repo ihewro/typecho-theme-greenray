@@ -12,6 +12,9 @@
         <div class="meta">
           <span class="date">Posted on
             <time datetime="<?php $this->date('c'); ?>"><?php $this->date('F j, Y'); ?></time></span>
+   <?php if($this->user->hasLogin()):?><span class="notebook">
+  <a href="<?php $this->options->adminUrl(); ?>write-<?php if($this->is('post')): ?>post<?php else: ?>page<?php endif;?>.php?cid=<?php echo $this->cid;?>" class="category-link"  target="_blank">编辑</a></span>
+<?php endif;?>
         </div>
       </header>
       
