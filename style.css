@@ -1254,3 +1254,42 @@ a.itags {
   font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, STXihei, "华文细黑","Microsoft Jhenghei","微软正黑",sans-serif;
 
 }
+
+form.protected .word {
+	color:rgba(0,0,0,.5);
+	margin-bottom: 15px;
+}
+form.protected input[type="password"].text {
+    border: 0 none;
+    border-bottom: 1px dashed #f1f1f1;
+    color: rgba(0,0,0,.5);
+    outline: none;
+}
+form.protected input[type="password"].text:hover {
+    border-color: #aae195;
+    outline: 0;
+}
+
+
+form.protected input[type="password"].text:focus {
+    border-color: #aae195;
+    outline: 0;
+}
+
+form.protected input[type="submit"].submit {
+    border: none;
+    border-bottom: 1px dashed #f1f1f1;
+    color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    outline: none;
+}
+form.protected input[type="submit"].submit:hover {
+    border: 0;
+    background-color: #aae195;
+    color: #fff;
+    outline: none;
+}

@@ -32,8 +32,10 @@
     </article>
     	<?php endwhile; ?>
         <?php else: ?>
-            <article class="post">
-                <h2 class="post-title"><?php _e('没有找到内容'); ?></h2>
+<article class="article">
+     <header class="header">
+                <h2 class="title"><?php _e('没有找到内容'); ?></h2>
+      </header>
             </article>
         <?php endif; ?>
 

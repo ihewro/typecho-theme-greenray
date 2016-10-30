@@ -19,7 +19,7 @@ $this->need('header.php');
      </header>
 <div id="search-own">
 <form method="post" action="">
-    <input type="text" name="s" class="text search-class" size="32" placeholder="<?php _e('Input keyword And then Press enter'); ?>"/>
+    <input type="text" name="s" class="text search-class" size="32" placeholder="<?php _e('Enter to Search'); ?>"/>
 </form>
 </div>
 <div class="content">

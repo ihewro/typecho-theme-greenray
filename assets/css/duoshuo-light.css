@@ -1029,7 +1029,8 @@
 
 #ds-thread #ds-reset .ds-comment-body img {
 	max-width: 100%;
-	vertical-align: text-bottom
+	vertical-align: text-bottom;
+	display: inline;
 }
 
 #ds-thread #ds-reset .ds-comment-body embed {
