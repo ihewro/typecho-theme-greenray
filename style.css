@@ -393,7 +393,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, STXihei, "华文细黑",'Microsoft Yahei',"微软雅黑", Arial, sans-serif;
+  font-family: "Source Han Serif CN","Roboto Slab", "Hiragino Sans GB", "Helvetica Neue", Helvetica, STXihei, "华文细黑",'Microsoft Yahei',"微软雅黑", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   color: #555555;
