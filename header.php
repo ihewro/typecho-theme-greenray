@@ -16,7 +16,6 @@
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/duoshuo-light.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/default.css') ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/railscasts.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/zoom.css') ?>">
