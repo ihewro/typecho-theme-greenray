@@ -15,15 +15,6 @@ function themeConfig($form) {
     $themeColor->input->setAttribute('class', 'mini');
     $form->addInput($themeColor);
 	
-	//配置多说评论
-    $duoshuosn = new Typecho_Widget_Helper_Form_Element_Text('duoshuosn',NULL, 'hewro','配置多说short_name', '填写你的多说评论的short_name，使博客的评论系统可用,不填则不启用多说，包括不加载多说js与css<br><font color="#F40">注意：</font>这里的多说css都是主题内置好的，所以多说自定义css里的css最好清空，否则会有不美观的现象发生.<br>博主认证必须修改aseets/css/duoshuo.min.css的博主ID');
-    $duoshuosn->input->setAttribute('class', 'mini');
-    $form->addInput($duoshuosn);
-	
-	//配置多说博主标志
-    $duoshuoid = new Typecho_Widget_Helper_Form_Element_Text('duoshuoid',NULL, '574993','配置多说博主标志的user-id', '配置多说博主标志的user-id，<a target="_blank" href="http://duoshuo.com/settings/avatar/">点击这个地址</a> 点击你的名字，出现的网页的最后数字就是你的ID');
-    $duoshuoid->input->setAttribute('class', 'mini');
-    $form->addInput($duoshuoid);
 	
 	//底部第一个链接的标题
 	$linkonetitle = new Typecho_Widget_Helper_Form_Element_Text('linkonetitle',NULL, 'Friends','底部第一个链接的标题','');
