@@ -46,22 +46,7 @@
         };
  setupContents();
 </script>
-<?php if ($this->options->duoshuosn){ ?>
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"<?php $this->options->duoshuosn();?>",theme:"none"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src ='<?php $this->options->themeUrl('assets/js/embed.min.js') ?>';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-<?php };?>
 <script>
 hljs.initHighlightingOnLoad();
 //pjax 刷新
