@@ -19,12 +19,14 @@
       </div>
     </article>
     
+    <!-- comment out page navigation
     <nav id="page-nav" class="page-nav">
       <div class="nav-links">
         <div class="nav-previous"></div>
         <div class="nav-next"></div>
       </div>
     </nav>
+    -->
     <!--comments-->
 <div id="fb_comments_container">
  <?php $this->need('comments.php'); ?>
